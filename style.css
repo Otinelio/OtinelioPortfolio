@@ -9,6 +9,8 @@
 body {
 
 	overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
 } 
 .scroll-to-top {
     position: fixed;
@@ -129,13 +131,13 @@ section#section1 div.container .trait {
     margin: 0px auto;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
     section#section1 div.container h1 {
         font-size: 60px; /* Ajustez la taille selon vos besoins */
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
     section#section1 div.container h1 {
         font-size: 50px; /* Ajustez la taille selon vos besoins */
     }
@@ -227,12 +229,12 @@ section#competence .trait {
 } 
 @media screen and (max-width: 770px) {
     section#competence h1 {
-       font-size: 40px !important; /* Ajustez la taille selon vos besoins */
+       font-size: 60px !important; /* Ajustez la taille selon vos besoins */
    } 
 } 
 @media screen and (max-width: 550px) {
     section#competence h1 {
-       font-size: 35px; /* Ajustez la taille selon vos besoins */
+       font-size: 50px; /* Ajustez la taille selon vos besoins */
    } 
    section#competence h4 {
        font-size: 1.5rem;
@@ -310,13 +312,13 @@ section#realisation div.container .trait {
     margin: 0px auto;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
     section#realisation div.container h1 {
         font-size: 60px; /* Ajustez la taille selon vos besoins */
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
     section#realisation div.container h1 {
         font-size: 50px; /* Ajustez la taille selon vos besoins */
     }
@@ -365,15 +367,15 @@ section#contact .trait {
     margin: 0px auto;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
     section#contact h1 {
-        font-size: 60px; /* Ajustez la taille selon vos besoins */
+        font-size: 60px !important; /* Ajustez la taille selon vos besoins */
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
     section#contact h1 {
-        font-size: 50px; /* Ajustez la taille selon vos besoins */
+        font-size: 50px !important; /* Ajustez la taille selon vos besoins */
     }
     section#contact h4 {
         font-size: 1.5rem;
