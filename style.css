@@ -6,6 +6,10 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
 }
+body {
+
+	overflow-x: hidden;
+} 
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
