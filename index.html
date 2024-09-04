@@ -344,28 +344,28 @@
       <div class="row d-flex justify-content-evenly g-5">
           <div class="card p-0 col-10 col-lg-5 rounded-1 border-0 shadow-lg" style="color: rgba(0, 0, 0, 0.802);">
                 <img src="img/mentor.jpg" class="card-img-top" alt="..." style="border-bottom: 5px rgb(169, 166, 166) solid;">
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h4>Mentor</h4>
                   <a href="#" class="btn btn-primary px-4 fw-bold rounded-0">Voir le site</a>
                 </div>
           </div>
           <div class="card p-0 col-10 col-lg-5 rounded-1 border-0 shadow-lg" style="color: rgba(0, 0, 0, 0.802);">
                 <img src="img/mentor.jpg" class="card-img-top" alt="..." style="border-bottom: 5px rgb(169, 166, 166) solid;">
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h4>Mentor</h4>
                   <a href="#" class="btn btn-primary px-4 fw-bold rounded-0">Voir le site</a>
                 </div>
           </div>
           <div class="card p-0 col-10 col-lg-5 rounded-1 border-0 shadow-lg" style="color: rgba(0, 0, 0, 0.802);">
                 <img src="img/mentor.jpg" class="card-img-top" alt="..." style="border-bottom: 5px rgb(169, 166, 166) solid;">
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h4>Mentor</h4>
                   <a href="#" class="btn btn-primary px-4 fw-bold rounded-0">Voir le site</a>
                 </div>
           </div>
           <div class="card p-0 col-10 col-lg-5 rounded-1 border-0 shadow-lg" style="color: rgba(0, 0, 0, 0.802);">
                 <img src="img/mentor.jpg" class="card-img-top" alt="..." style="border-bottom: 5px rgb(169, 166, 166) solid;">
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h4>Mentor</h4>
                   <a href="#" class="btn btn-primary px-4 fw-bold rounded-0">Voir le site</a>
                 </div>
@@ -386,7 +386,7 @@
 
       <div class="container-lg  my-3 pt-5 pb-3 rounded">
 
-        <div class="row d-flex justify-content-around">
+        <div class="row d-flex ">
 
           <div class="col-lg-4 col-md-8 col-10  mb-lg-5 mb-4">
 
@@ -430,7 +430,7 @@
             <a href="#" class=" shadow-sm bg-body-secondary  rounded fs-4 d-block text-center py-2" id="Mobile-tel">Othnelo</a>
 
           </div>
-          <div class="col-lg-4 col-md-8 col-10 mb-lg-5 mb-4">
+          <div class="col-lg-4 col-md-8 col-10 mb-lg-5 mb-4 ">
 
             <label for="linkedin" class="bi bi-linkedin fs-5 d-block text-center">   Linkedin</label>
 
@@ -459,9 +459,9 @@
 
       <div class="text-center mb-5">
 
-        <a href="#" class="bi bi-envelope-fill p-2 mx-1 fs-5 text-white border rounded-pill"></a>
-        <a href="#" class="bi bi-facebook p-2 mx-1 fs-5 text-white border rounded-pill"></a>
-        <a href="#" class="bi bi-github p-2 mx-1 fs-5 text-white border rounded-pill"></a>
+        <a href="#" class="bi bi-envelope-fill px-2 py-1 mx-1 fs-5 text-white border rounded-pill"></a>
+        <a href="#" class="bi bi-facebook px-2 py-1 mx-1 fs-5 text-white border rounded-pill"></a>
+        <a href="#" class="bi bi-github px-2 py-1 fs-5 mx-1 text-white border rounded-pill"></a>
 
       </div>
 
@@ -601,6 +601,28 @@ window.addEventListener('scroll', function () {
 scrollToTopButton.addEventListener('click', function (event) {
   event.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Pour animer les petits carrés de la section 2 au survol
+document.querySelectorAll('.divactivite .col-lg-4 .col-11').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.classList.add('animate');
+    });
+    card.addEventListener('mouseleave', () => {
+        card.classList.remove('animate');
+    });
+});
+
+
+// pour animer les cartes de la section portfolio au survol.
+
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.classList.add('card-hover');
+    });
+    card.addEventListener('mouseleave', () => {
+        card.classList.remove('card-hover');
+    });
 });
   </script>
 

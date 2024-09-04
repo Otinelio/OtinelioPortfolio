@@ -3,7 +3,6 @@
     padding: 0;
     text-decoration: none;
     text-transform: none;
-    font-family: "Montserrat", sans-serif;
     font-weight: 100;
 }
 body {
@@ -55,11 +54,11 @@ header .banner .banner-img .banner-overlay {
 
 
 header .banner .banner-img .banner-overlay p {
-    font-family: "Inconsolata", monospace;
+    /* font-family: "Inconsolata", monospace; */
 }
 
 header .banner .banner-img .banner-overlay h1 {
-    font-family: "Inconsolata", monospace;
+    /* font-family: "Inconsolata", monospace; */
     text-transform: uppercase;
 }
 
@@ -219,6 +218,9 @@ section#activite div.container .trait {
         font-size: 1.3rem;
     }
 }
+section#activite div.col-11{
+    transition: all 0.5s;
+}
 section#activite div.col-11:hover{
     background-color: black !important;
     color: white !important;
@@ -374,6 +376,9 @@ section#realisation a.btn {
     border: rgb(184, 182, 182);
     color: black;
 }
+section#realisation .card {
+    transition: all 0.5s;
+}
 
 
 
@@ -449,3 +454,13 @@ footer#footer p {
 
 
 
+
+.animate {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.card-hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
