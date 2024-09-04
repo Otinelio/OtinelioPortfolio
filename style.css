@@ -219,11 +219,11 @@ section#activite div.container .trait {
         font-size: 1.3rem;
     }
 }
-section#activite div.col-12:hover{
+section#activite div.col-11:hover{
     background-color: black !important;
     color: white !important;
 }
-section#activite div.col-12:hover p {
+section#activite div.col-11:hover p {
     visibility: visible !important;
     transition-duration: 0.5s;
 }
