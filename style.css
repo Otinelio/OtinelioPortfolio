@@ -112,6 +112,9 @@ main nav {
 section#section1 {
     background-color: #ffffff;
 }
+section#section1 p {
+    font-size: 22px !important;
+}
 section#section1 div.container {
     position: relative;
 }
@@ -155,6 +158,9 @@ section#section1 div.container .trait {
     section#section1 div.container h4 {
         font-size: 1.5rem;
         margin-top: -48px;
+    }
+    section#section1 p {
+        font-size: 18px !important;
     }
 }
 
