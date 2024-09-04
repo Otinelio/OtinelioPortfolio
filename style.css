@@ -7,11 +7,19 @@
     font-weight: 100;
 }
 body {
-
 	overflow-x: hidden;
     margin: 0%;
     padding: 0%;
 } 
+section {
+    overflow: hidden;
+}
+header {
+    overflow: hidden;
+}
+footer {
+    overflow: hidden;
+}
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
