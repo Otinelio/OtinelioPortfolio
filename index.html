@@ -109,7 +109,7 @@
         <div class="trait mb-5 mt-4"></div>
         <div class="divactivite row gy-4 mb-5">
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="col-12 mt-4 border p-4 h-100 border-0 shadow"
+            <div class="col-11 mx-auto mt-4 border p-4 h-100 border-0 shadow"
               style="background-color: white; color: rgba(79, 78, 78, 0.9);">
               <i class="bi bi-tv mb-0 p-0" style="font-size: 70px;"></i>
               <h6 class="mt-0 p-0 text-uppercase" style="font-weight: 800;">Multi - plateforme</h6>
@@ -118,7 +118,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="col-12 mt-4 border p-4 h-100 border-0 shadow"
+            <div class="col-11 mx-auto mt-4 border p-4 h-100 border-0 shadow"
               style="background-color: white; color: rgba(79, 78, 78, 0.9);">
               <i class="bi bi-code-slash mb-0 p-0" style="font-size: 70px;"></i>
               <h6 class="mt-0 p-0 fw-bold text-uppercase" style="font-weight: 800;">Développement Web</h6>
@@ -128,7 +128,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="col-12 mt-4 border p-4 h-100 border-0 shadow"
+            <div class="col-11 mx-auto mt-4 border p-4 h-100 border-0 shadow"
               style="background-color: white; color: rgba(79, 78, 78, 0.9);">
               <i class="bi bi-gem mb-0 p-0" style="font-size: 70px;"></i>
               <h6 class="mt-0 p-0 fw-bold text-uppercase">Projets web</h6>
@@ -139,7 +139,7 @@
     
     
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="col-12 mt-4 border p-4 h-100 border-0 shadow"
+            <div class="col-11 mx-auto mt-4 border p-4 h-100 border-0 shadow"
               style="background-color: white; color: rgba(79, 78, 78, 0.9);">
               <i class="bi bi-bullseye mb-0 p-0" style="font-size: 70px;"></i>
               <h6 class="mt-0 p-0 text-uppercase" style="font-weight: 800;">Référencement</h6>
@@ -149,7 +149,7 @@
           </div>
     
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="col-12 mt-4 border p-4 h-100 border-0 shadow"
+            <div class="col-11 mx-auto mt-4 border p-4 h-100 border-0 shadow"
               style="background-color: white; color: rgba(79, 78, 78, 0.9);">
               <i class="bi bi-person-add mb-0 p-0" style="font-size: 70px;"></i>
               <h6 class="mt-0 p-0 fw-bold text-uppercase" style="font-weight: 800;">Accompagnement</h6>
@@ -159,7 +159,7 @@
           </div>
     
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="col-12 mt-4 border p-4 h-100 border-0 shadow"
+            <div class="col-11 mx-auto mt-4 border p-4 h-100 border-0 shadow"
               style="background-color: white; color: rgba(79, 78, 78, 0.9);">
               <i class="bi bi-rocket-takeoff-fill mb-0 p-0" style="font-size: 70px;"></i>
               <h6 class="mt-0 p-0 fw-bold text-uppercase">Maintenance Web</h6>
@@ -334,12 +334,14 @@
     </section>
 
     <section  id="realisation" class="py-5">
-      <div class="container py-5">
-        
+      <div class="container pt-2">
         <h1 class="col-12">Portfolio</h1>
-        <h4 class="text-uppercase text-center fw-light">Mes travaux</h4>
-        <div class="trait mb-5 mt-4"></div>
-        <div class="row d-flex justify-content-evenly g-5">
+      <h4 class="text-uppercase text-center fw-light">Mes travaux</h4>
+      <div class="trait mb-5 mt-4"></div>
+    </div>
+      <div class="pb-5">
+        
+      <div class="row d-flex justify-content-evenly g-5">
           <div class="card p-0 col-10 col-lg-5 rounded-1 border-0 shadow-lg" style="color: rgba(0, 0, 0, 0.802);">
                 <img src="img/mentor.jpg" class="card-img-top" alt="..." style="border-bottom: 5px rgb(169, 166, 166) solid;">
                 <div class="card-body">
@@ -535,8 +537,18 @@
     window.addEventListener('scroll', setActiveNavItem);
     window.addEventListener('load', setActiveNavItem);
 
+    // Pour faire disparaître le menu burger après avoir cliqué sur un élément de la navbar
+    const handleNavClick = () => {
+        const navbarCollapse = document.querySelector('.collapse');
+        if (navbarCollapse) {
+          navbarCollapse.classList.remove('show'); // Ferme le menu burger
+        }
+      };
 
-
+      // Ajoutez cet événement à chaque lien de la navbar
+      document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+        link.addEventListener('click', handleNavClick);
+      });
     // script pour fixer navbar apres son passage
     window.addEventListener('scroll', function () {
       const header = document.querySelector('header');

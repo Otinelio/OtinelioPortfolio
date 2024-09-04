@@ -117,8 +117,7 @@ section#section1 div.container {
     position: relative;
 }
 section#section1 div.container h1 {
-    position:
- relative;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 1;
@@ -131,6 +130,7 @@ section#section1 div.container h1 {
 section#section1 div.container h4 {
     font-size: 2.5em;
     color: rgba(0, 0, 0, 0.704);
+    margin-top: -80px;
 }
 section#section1 div.container .trait {
     width: 50px;
@@ -143,14 +143,19 @@ section#section1 div.container .trait {
     section#section1 div.container h1 {
         font-size: 60px; /* Ajustez la taille selon vos besoins */
     }
+    section#section1 div.container h4 {
+        margin-top: -60px;
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
     section#section1 div.container h1 {
-        font-size: 50px; /* Ajustez la taille selon vos besoins */
+        font-size: 45px; /* Ajustez la taille selon vos besoins */
     }
     section#section1 div.container h4 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-top: -48px;
     }
 }
 
@@ -182,6 +187,7 @@ section#activite div.container h1 {
 section#activite div.container h4 {
     font-size: 2em;
     color: rgba(0, 0, 0, 0.704);
+    margin-top: -100px;
 }
 section#activite div.container .trait {
     width: 50px;
@@ -190,18 +196,27 @@ section#activite div.container .trait {
     margin: 0px auto;
 }
 
+@media screen and (max-width: 992px) {
+    section#activite div.container h4 {
+        margin-top: -115px;
+    }
+}
 @media screen and (max-width: 770px) {
     section#activite div.container h1 {
-        font-size: 60px; /* Ajustez la taille selon vos besoins */
+        font-size: 70px; /* Ajustez la taille selon vos besoins */
+    }
+    section#activite div.container h4 {
+        font-size: 1.5rem;
+        margin-top: -80px;
     }
 }
 
 @media screen and (max-width: 550px) {
     section#activite div.container h1 {
-        font-size: 50px; /* Ajustez la taille selon vos besoins */
+        font-size: 45px; /* Ajustez la taille selon vos besoins */
     }
     section#activite div.container h4 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 section#activite div.col-12:hover{
@@ -223,6 +238,7 @@ section#competence  h1 {
 section#competence h4 {
     font-size: 2em;
     color: rgba(0, 0, 0, 0.704);
+    margin-top: -80px;
 }
 section#competence .trait {
     width: 50px;
@@ -232,20 +248,28 @@ section#competence .trait {
 }
 @media screen and (max-width: 992px) {
     section#competence h1 {
-       font-size: 50px !important; /* Ajustez la taille selon vos besoins */
-   } 
-} 
-@media screen and (max-width: 770px) {
-    section#competence h1 {
-       font-size: 60px !important; /* Ajustez la taille selon vos besoins */
-   } 
-} 
-@media screen and (max-width: 550px) {
-    section#competence h1 {
-       font-size: 50px; /* Ajustez la taille selon vos besoins */
+       font-size: 90px !important; /* Ajustez la taille selon vos besoins */
    } 
    section#competence h4 {
-       font-size: 1.5rem;
+    margin-top: -75px;
+} 
+} 
+@media screen and (max-width: 768px) {
+    section#competence h1 {
+       font-size: 70px !important; /* Ajustez la taille selon vos besoins */
+   } 
+   section#competence h4 {
+    font-size: 1.5rem;
+    margin-top: -60px;
+} 
+} 
+@media screen and (max-width: 576px) {
+    section#competence h1 {
+       font-size: 45px !important; /* Ajustez la taille selon vos besoins */
+   } 
+   section#competence h4 {
+       font-size: 1.3rem;
+       margin-top: -45px;
    } 
 }
 section#competence div.imgdiv {
@@ -312,6 +336,7 @@ section#realisation div.container h1 {
 section#realisation div.container h4 {
     font-size: 2em;
     color: rgba(0, 0, 0, 0.704);
+    margin-top: -78px;
 }
 section#realisation div.container .trait {
     width: 50px;
@@ -322,16 +347,20 @@ section#realisation div.container .trait {
 
 @media screen and (max-width: 768px) {
     section#realisation div.container h1 {
-        font-size: 60px; /* Ajustez la taille selon vos besoins */
+        font-size: 70px; /* Ajustez la taille selon vos besoins */
+    }
+    section#realisation div.container h4 {
+        margin-top: -65px;
     }
 }
 
 @media screen and (max-width: 576px) {
     section#realisation div.container h1 {
-        font-size: 50px; /* Ajustez la taille selon vos besoins */
+        font-size: 45px; /* Ajustez la taille selon vos besoins */
     }
     section#realisation div.container h4 {
         font-size: 1.5rem;
+        margin-top: -45px;
     }
 }
 
@@ -367,6 +396,7 @@ section#contact .container h1 {
 section#contact h4 {
     font-size: 2em;
     color: rgba(0, 0, 0, 0.704);
+    margin-top: -95px;
 }
 section#contact .trait {
     width: 50px;
@@ -383,10 +413,11 @@ section#contact .trait {
 
 @media screen and (max-width: 576px) {
     section#contact h1 {
-        font-size: 50px !important; /* Ajustez la taille selon vos besoins */
+        font-size: 45px !important; /* Ajustez la taille selon vos besoins */
     }
     section#contact h4 {
         font-size: 1.5rem;
+        margin-top: -65px;
     }
 }  
 
