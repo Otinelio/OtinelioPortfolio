@@ -23,8 +23,8 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #6d6e707e;
     color: white;
+    background-color: rgba(0, 255, 255, 0.437);
     width: 30px;
     text-align: center;
     line-height: 20px;
@@ -52,6 +52,7 @@ header .banner .banner-img .banner-overlay {
 }
 header h1 {
     text-transform: uppercase;
+    color: rgba(0, 255, 255) !important;
 }
 
 main nav {
@@ -66,7 +67,7 @@ main nav div .collapse {
 
 .navbar-nav .nav-link.active-section {
     background-color: rgb(32, 32, 33);
-    color: rgb(255, 255, 255);
+    color: rgba(0, 255, 255);
 }
 
 .navbar-fixed {
@@ -82,7 +83,7 @@ main nav ul li:hover {
     
 }
 main nav ul li a.nav-link:hover {
-    color: white;
+    color: rgba(0, 255, 255);
 }
 main nav ul li a.nav-link  {
     margin: 0;
@@ -117,7 +118,7 @@ section#section1 div.container h1 {
     z-index: 1;
     font-size: 90px;
     font-weight: 900;
-    color: rgba(0, 0, 0, 0.056);
+    color: rgba(0, 255, 255, 0.1);
     text-align: center;
     text-transform: uppercase;
 }
@@ -187,7 +188,7 @@ section#activite div.container h1 {
     z-index: 1;
     font-size: 90px;
     font-weight: 900;
-    color: rgba(0, 0, 0, 0.056);
+    color: rgba(0, 255, 255, 0.1);
     text-align: center;
     text-transform: uppercase;
 }
@@ -238,6 +239,9 @@ section#activite div.col-11:hover{
     background-color: black !important;
     color: white !important;
 }
+section#activite div.col-11:hover i, section#activite div.col-11:hover h6{
+    color: rgba(0, 255, 255) !important;
+}
 section#activite div.col-11:hover p {
     visibility: visible !important;
     transition-duration: 0.5s;
@@ -247,7 +251,7 @@ section#activite div.col-11:hover p {
 section#competence  h1 {
     font-size: 90px;
     font-weight: 900;
-    color: rgba(0, 0, 0, 0.056);
+    color: rgba(0, 255, 255, 0.1);
     text-transform: uppercase;
 }
 section#competence h4 {
@@ -345,7 +349,7 @@ section#realisation div.container h1 {
     z-index: 1;
     font-size: 90px;
     font-weight: 900;
-    color: rgba(0, 0, 0, 0.056);
+    color: rgba(0, 255, 255, 0.1);
     text-align: center;
     text-transform: uppercase;
 }
@@ -384,7 +388,10 @@ section#realisation div.container .trait {
 section#realisation a.btn:hover {
     background-color: black;
     border: black;
-    color: white;
+    color: rgba(10, 240, 240, 0.791);
+}
+section#realisation .card:hover img {
+    border-color: rgba(0, 255, 255, 0.41) !important;
 }
 section#realisation a.btn {
     background-color: rgb(201, 196, 196);
@@ -413,7 +420,7 @@ section#contact .container h1 {
     z-index: 1;
     font-size: 90px;
     font-weight: 900;
-    color: rgba(0, 0, 0, 0.056);
+    color: rgba(0, 255, 255, 0.1);
     text-align: center;
     text-transform: uppercase;
 }
@@ -452,7 +459,7 @@ section#contact div.row a.shadow-sm {
     transition: all 0.3s;
 }
 section#contact div.row a.shadow-sm:hover {
-    color: rgb(255, 255, 255) !important;
+    color: rgba(0, 255, 255) !important;
     background-color: rgb(0, 0, 0) !important;
     text-decoration: underline !important;
     transition: all 0.3s;
@@ -469,7 +476,7 @@ section#contact div.col-lg-4 {
 /* Footer */
 
 footer#footer a.bi:hover {
-    color: rgba(255, 255, 255, 0.539) !important;
+    color: rgba(0, 255, 255, 0.429) !important;
     border-color: rgba(255, 255, 255, 0.539) !important;
 }
 footer#footer p {
