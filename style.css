@@ -50,6 +50,9 @@ header .banner .banner-img .banner-overlay {
     text-align: start;
     background-color: rgba(0, 0, 0, 0.8);
 }
+header h1 {
+    text-transform: uppercase;
+}
 
 main nav {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.137);
