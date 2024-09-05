@@ -51,17 +51,6 @@ header .banner .banner-img .banner-overlay {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-
-header .banner .banner-img .banner-overlay p {
-    /* font-family: "Inconsolata", monospace; */
-}
-
-header .banner .banner-img .banner-overlay h1 {
-    /* font-family: "Inconsolata", monospace; */
-    text-transform: uppercase;
-}
-
 main nav {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.137);
 }
@@ -169,6 +158,15 @@ section#section1 .divpresentation {
     color: rgba(0, 0, 0, 0.705);
     font-weight: 100;
 }
+section#section1 p a {
+    text-decoration: none !important;
+    color: rgb(6, 194, 194);
+
+}
+section#section1 p a:hover {
+    text-decoration: underline !important;
+    color: rgb(0, 255, 255);   
+}
 
 /* section 2 */
 section#activite{
@@ -226,6 +224,10 @@ section#activite div.container .trait {
 }
 section#activite div.col-11{
     transition: all 0.5s;
+}
+.animate {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
 }
 section#activite div.col-11:hover{
     background-color: black !important;
@@ -385,6 +387,10 @@ section#realisation a.btn {
 section#realisation .card {
     transition: all 0.5s;
 }
+.card-hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
 
 
 
@@ -443,6 +449,13 @@ section#contact div.row a.shadow-sm:hover {
     text-decoration: underline !important;
     transition: all 0.3s;
 }
+section#contact div.col-lg-4 {
+    transition: all 0.5s ease;
+}
+.contact-hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
 
 
 /* Footer */
@@ -461,12 +474,6 @@ footer#footer p {
 
 
 
-.animate {
-    transform: scale(1.1);
-    transition: all 0.5s ease;
-}
 
-.card-hover {
-    transform: scale(1.05);
-    transition: all 0.5s ease;
-}
+
+
