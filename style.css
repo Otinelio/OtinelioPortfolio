@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     text-transform: none;
+    font-family: "Reddit Sans Condensed", sans-serif !important; 
 }
 body {
 	overflow-x: hidden;
