@@ -349,7 +349,7 @@ section#realisation div.container h1 {
     z-index: 1;
     font-size: 90px;
     font-weight: 900;
-    color: rgba(0, 255, 255, 0.1);
+    color: rgba(0, 255, 255, 0.2);
     text-align: center;
     text-transform: uppercase;
 }
@@ -478,6 +478,11 @@ section#contact div.col-lg-4 {
 footer#footer a.bi:hover {
     color: rgba(0, 255, 255, 0.429) !important;
     border-color: rgba(255, 255, 255, 0.539) !important;
+}
+footer#footer a {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
 }
 footer#footer p {
     color: rgba(255, 255, 255, 0.686);
