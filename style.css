@@ -188,141 +188,118 @@ section#section1 p a:hover {
 }
 
 /* section 2 */
-section#activite{
-    background-color: #eee;
+section#activite {
+  background-color: #eee;
 }
 
 section#activite div.container {
-    position: relative;
+  position: relative;
 }
+
+/* TITRES PRINCIPAUX */
 section#activite div.container h1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    font-size: 90px;
-    font-weight: 900;
-    color: rgba(0, 255, 255, 0.1);
-    text-align: center;
-    text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  font-size: 90px;
+  font-weight: 900;
+  color: rgba(0, 255, 255, 0.1);
+  text-align: center;
+  text-transform: uppercase;
 }
+
 section#activite div.container h4 {
-    font-size: 2em;
-    color: rgba(0, 0, 0, 0.704);
-    margin-top: -100px;
-    font-weight: 700 !important;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: -100px;
+  font-weight: 700;
 }
+
 section#activite div.container .trait {
-    width: 50px;
-    height: 2px;
-    background-color: rgb(0, 0, 0);
-    margin: 0px auto;
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 992px) {
-    section#activite div.container h4 {
-        margin-top: -115px;
-    }
-    section#activite div.col-11{
+/* ==== GRAND ÉCRAN (Desktop >= 992px) ==== */
+@media screen and (min-width: 992px) {
+  section#activite div.container h4 {
+    margin-top: -115px;
+  }
+
+  section#activite div.col-11 {
     transition: all 0.5s;
-}
-.animate {
-    transform: scale(1.1);
-    transition: all 0.5s ease;
-}
-section#activite div.col-11:hover{
+  }
+
+  /* Animation au survol uniquement sur desktop */
+  section#activite div.col-11:hover {
     background-color: black !important;
     color: white !important;
-}
-section#activite div.col-11:hover i, section#activite div.col-11:hover h6{
+    transform: scale(1.05);
+  }
+
+  section#activite div.col-11:hover i,
+  section#activite div.col-11:hover h6 {
     color: rgba(0, 255, 255) !important;
-}
-section#activite div.col-11:hover p {
+  }
+
+  section#activite div.col-11:hover p {
     visibility: visible !important;
     transition-duration: 0.5s;
-}
-}
-@media screen and (max-width: 770px) {
-    section#activite div.container h1 {
-        font-size: 70px; /* Ajustez la taille selon vos besoins */
-    }
-    section#activite div.container h4 {
-        font-size: 1.5rem;
-        margin-top: -80px;
-    }
-    section#activite div.col-11{
-    transition: all 0.5s;
-}
-.animate {
-    transform: scale(1.1);
-    transition: all 0.5s ease;
-}
-section#activite div.col-11:hover{
-    background-color: black !important;
-    color: white !important;
-}
-section#activite div.col-11:hover i, section#activite div.col-11:hover h6{
-    color: rgba(0, 255, 255) !important;
-}
-section#activite div.col-11:hover p {
-    visibility: visible !important;
-    transition-duration: 0.5s;
-}
+  }
 }
 
-@media screen and (max-width: 550px) {
-    section#activite div.container h1 {
-        font-size: 45px; /* Ajustez la taille selon vos besoins */
-    }
-    section#activite div.container h4 {
-        font-size: 1.3rem;
-    }
+/* ==== TABLETTES (768px → 991px) ==== */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  section#activite div.container h1 {
+    font-size: 70px;
+  }
 
-    section#activite div.col-11{
-    transition: all 0.5s;
-}
-.animate {
-    transform: scale(1.1);
-    transition: all 0.5s ease;
-}
-section#activite div.col-11{
+  section#activite div.container h4 {
+    font-size: 1.5rem;
+    margin-top: -80px;
+  }
+
+  /* Pas de hover — styles fixes */
+  section#activite div.col-11 {
     background-color: black !important;
     color: white !important;
-}
-section#activite div.col-11 i, section#activite div.col-11 h6{
-    color: rgba(0, 255, 255) !important;
-}
-section#activite div.col-11 p {
-    visibility: visible !important;
-    transition-duration: 0.5s;
-}
-}
-@media screen and (min-width: 550px) {
-    section#activite div.container h1 {
-        font-size: 45px; /* Ajustez la taille selon vos besoins */
-    }
-    section#activite div.container h4 {
-        font-size: 1.3rem;
-    }
+  }
 
-    section#activite div.col-11{
-    transition: all 0.5s;
+  section#activite div.col-11 i,
+  section#activite div.col-11 h6 {
+    color: rgba(0, 255, 255) !important;
+  }
+
+  section#activite div.col-11 p {
+    visibility: visible !important;
+  }
 }
-.animate {
-    transform: scale(1.1);
-    transition: all 0.5s ease;
-}
-section#activite div.col-11{
+
+/* ==== PETITS ÉCRANS (≤ 767px) ==== */
+@media screen and (max-width: 767.98px) {
+  section#activite div.container h1 {
+    font-size: 45px;
+  }
+
+  section#activite div.container h4 {
+    font-size: 1.3rem;
+  }
+
+  /* Styles permanents sur mobile */
+  section#activite div.col-11 {
     background-color: black !important;
     color: white !important;
-}
-section#activite div.col-11 i, section#activite div.col-11 h6{
+  }
+
+  section#activite div.col-11 i,
+  section#activite div.col-11 h6 {
     color: rgba(0, 255, 255) !important;
-}
-section#activite div.col-11 p {
+  }
+
+  section#activite div.col-11 p {
     visibility: visible !important;
-    transition-duration: 0.5s;
-}
+  }
 }
 
 
